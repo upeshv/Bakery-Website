@@ -16,6 +16,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	background: transparent;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
 	line-height: 1;
 }
@@ -499,10 +504,24 @@ h3#reply-title {
   font-style: normal;
 }
 
+body {  
+  font-family: 'ProximaNovaRegular';
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 1.4px;  
+  color: #56534c;  
+}
+
 .container { 
   max-width: 1240px;  
   padding: 0 10px;
   margin: 0 auto;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 header.top_header {
@@ -579,7 +598,7 @@ header.top_header.top {
 .navigation_bar ul li:after {
   content: '~';
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
   z-index: 9;
   color: #fff;
@@ -722,7 +741,7 @@ header.top_header.top {
 
 .bakery_cakes {
   padding: 120px 0;
-  background: #fefefd;
+  background: #fefefd;  
 }
 
 .bakery_cakes_left {
@@ -879,7 +898,8 @@ blockquote span.right {
   height: 250px;
   padding: 1%;
   float: left;  
-  position: relative;
+  position: relative;  
+  overflow: hidden;
 }
 
 .bakery_cakes_right .bakery_cakes_img img {
@@ -887,7 +907,7 @@ blockquote span.right {
   height: 100%;
   max-width: 100%;
   object-fit: cover;
-  object-position: center top;  
+  object-position: center top;
 }
 
 .bakery_cakes_right .bakery_cakes_img:before {
@@ -924,4 +944,212 @@ blockquote span.right {
   text-transform: uppercase;
 }
 
+.tasty_pancakes {
+  background-repeat: no-repeat; 
+  background-size: cover;
+  padding: 90px 0 100px;
+  text-align: center;
+  position: relative;  
+  background-position: right top;
+}
 
+.tasty_pancakes .pancakes_inner_block .pancakes_slider {
+  padding-top: 60px;
+  outline: 0;  
+}
+
+.pancakes_left {
+  width: 420px;
+  height: 512px;  
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  border-radius: 0 0 0 40px;   
+}
+
+.pancakes_left:before {
+  content: "";
+  position: absolute;
+  bottom: -69px;
+  left: -65px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: -webkit-linear-gradient(49deg, transparent 110px, #000 100px,#666 100px, #fff 85%);
+  box-shadow: -3px -3px 15px 1px rgba(0, 0, 0, 0.2);  
+}
+
+.pancakes_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 0 0 0 55px;
+}
+
+.pancakes_right {
+  width: 545px;
+  height: 512px;
+  float: left;
+  text-align: left;
+  padding: 80px 55px 50px;
+  background: rgba(255,255,255,0.9);
+  position: relative;
+}
+
+.pancakes_right .ready_time {
+  width: 200px;
+  height: 200px;
+  padding: 34px 0px;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.46);
+	-moz-box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 2px 12px -4px rgba(0, 0, 0, 0.46);  
+  position: absolute;
+  top: -55px;
+  right: -100px;
+  z-index: 9;
+  background: rgba(255,255,255,0.9);
+}
+
+.pancakes_right .ready_time span.text {
+  font-family: 'Alegreya', serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #a47d5e;
+  text-transform: uppercase;
+  display: block;
+}
+
+.pancakes_right .ready_time span.time {
+  font-family: 'Alegreya', serif;
+  font-size: 92px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 80px;
+  letter-spacing: 9.2px;
+  text-align: center;
+  color: #dfc691;
+  text-transform: uppercase;
+  display: block;
+}
+
+.pancakes_right .ready_time span.min {
+  font-family: 'Alegreya', serif;
+  font-size: 12px;  
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #979285;
+  text-transform: lowercase;
+  display: block;
+}
+
+.pancakes_right h2, .pancakes_right h6 {
+  text-align: left;
+}
+
+.pancakes_right p {
+  margin: 65px 0 65px;
+  color: #56534c;
+}
+
+.pancakes_right ul {
+  margin: 0;
+  padding: 0 60px;
+  list-style: none;
+  text-align: center;
+}
+
+.pancakes_right ul li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.pancakes_right ul li img {
+  width: 90px;
+  height: 90px;
+  border-radius: 25em;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.pancakes_right ul button.slick-arrow {  
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #d8bba3;
+  border-radius: 50%;    
+  transform: translateY(-50%);
+  color: #d8bba3;
+  text-align: center;   
+}
+
+.pancakes_right ul button.slick-arrow:hover {
+  border-color: #56534c;
+}
+
+.pancakes_right ul .slick-prev {
+  left: 0px;
+}
+
+.pancakes_right ul .slick-prev:before {
+  content: "\f104";
+  font-family: 'FontAwesome';
+  color: #d8bba3;  
+}
+
+.pancakes_right ul .slick-prev:hover:before {
+  color: #56534c;  
+}
+
+.pancakes_right ul .slick-next {
+  right: 10px;
+}
+
+.pancakes_right ul .slick-next:before {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  color: #d8bba3;  
+}
+
+.pancakes_right ul .slick-next:hover:before {
+  color: #56534c;  
+}
+
+
+.pancakes_inner_block ul.slick-dots {
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  z-index: 9;     
+  height: 120px;
+}
+
+.pancakes_inner_block ul.slick-dots li {
+  display: block;
+  float: none;
+  margin: 5px 0 0 0;
+}
+
+.pancakes_inner_block ul.slick-dots li button:before {
+  content: "\f005";
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  color: #56534c;    
+}
+
+.pancakes_inner_block  .slick-dots li.slick-active button:before {
+  
+}
