@@ -47,7 +47,7 @@
       arrows:false,
       vertical: true,
       infinite: true,
-      speed: 300,
+      speed: 800,
       slidesToShow: 1,
       adaptiveHeight: true
     });

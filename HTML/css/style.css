@@ -712,6 +712,7 @@ header.top_header.top {
   font-style: normal;
   font-stretch: normal;
   line-height: 1.71;
+  text-align: center;
   letter-spacing: 4.2px;  
   color: #ffffff;
   text-transform: uppercase;
@@ -953,6 +954,10 @@ blockquote span.right {
   background-position: right top;
 }
 
+.tasty_pancakes .pancakes_inner_block {
+  padding-left: 85px;
+}
+
 .tasty_pancakes .pancakes_inner_block .pancakes_slider {
   padding-top: 60px;
   outline: 0;  
@@ -962,10 +967,9 @@ blockquote span.right {
   width: 420px;
   height: 512px;  
   float: left;
-  overflow: hidden;
-  background: transparent;
+  overflow: hidden;  
   position: relative;
-  border-radius: 0 0 0 40px;   
+  border-radius: 0 0 0 50px;   
 }
 
 .pancakes_left:before {
@@ -984,8 +988,7 @@ blockquote span.right {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-  border-radius: 0 0 0 55px;
+  object-position: center top;  
 }
 
 .pancakes_right {
@@ -1132,9 +1135,10 @@ blockquote span.right {
 .pancakes_inner_block ul.slick-dots {
   position: absolute;
   top: 45%;
-  left: 20px;
+  left: 105px;
   z-index: 9;     
-  height: 120px;
+  height: 200px;
+  width: 100px;
 }
 
 .pancakes_inner_block ul.slick-dots li {
@@ -1147,9 +1151,297 @@ blockquote span.right {
   content: "\f005";
   font-size: 20px;
   font-family: 'FontAwesome';
-  color: #56534c;    
+  color: #a47d5e;  
 }
 
-.pancakes_inner_block  .slick-dots li.slick-active button:before {
-  
+.bakery_breakfast {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+  background-position: right top;
+}
+
+.breakfast_left {
+  width: 63%;
+  float: left;
+  text-align: center;
+}
+
+.breakfast_left h2 {
+  color: #fff;
+}
+
+.breakfast_left h6 { 
+  margin-bottom: 14px;
+}
+
+.breakfast_left .breakfast_menu {
+  margin-top: 52px;
+}
+
+.breakfast_left .breakfast_menu h5 {
+  font-family: 'Alegreya', serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.breakfast_left .breakfast_menu span.text {
+  font-family: 'ProximaNovaRegular';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #c2beba;
+  margin-bottom: 27px;
+  display: block;
+}
+
+.breakfast_left .breakfast_menu span.price {
+  font-family: 'Alegreya', serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #dfc691;
+}
+
+.breakfast_right {
+  width: 400px;
+  height: 600px;
+  float: right;
+  background: rgba(243,241,233, 0.95);
+  outline: 1px dashed #9e9c93;
+  outline-offset: -10px;  
+  position: relative;
+  border-radius: 0 0 0 50px;
+  margin-right: 32px;
+}
+
+.breakfast_right .breakfast_right_border1 {
+  width: 16px;
+  height: 548px;
+  background: rgba(243,241,233, 0.95);
+  outline: 0.5px dashed #9e9c93;
+  outline-offset: -8px;
+  position: absolute;
+  top: 25px;
+  right: -16px;  
+}
+
+.breakfast_right .breakfast_right_border2 {
+  width: 16px;
+  height: 508px;
+  background: rgba(243,241,233, 0.95);
+  outline: 0.5px dashed #9e9c93;
+  outline-offset: -8px;
+  position: absolute;
+  top: 45px;
+  right: -32px;  
+}
+
+.flair_block {
+  padding: 50px 35px; 
+  height: 100%;  
+  overflow: hidden;
+  position: relative;
+  border-radius: 0 0 0 50px;
+}
+
+.flair_block:before {
+  content: "";
+  position: absolute;
+  bottom: -69px;
+  left: -65px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: -webkit-linear-gradient(49deg, transparent 110px, #000 100px,#666 100px, #f3f1e9 85%);
+  box-shadow: -3px -3px 15px 1px rgba(0, 0, 0, 0.2);  
+}
+
+.flair_block .decade {
+  word-spacing: 140px;
+}
+
+.flair_block h2.title {
+  margin: 70px 0 40px;
+  font-size: 40px;
+}
+
+.flair_block p {
+  line-height: 2.14;
+}
+
+.flair_block .button {
+  width: 190px;
+  border: solid 1px #9e9c93;
+  background: none;
+  color: #a47d5e;
+}
+
+.flair_block .button:hover {
+  border-color: #a47d5e;
+  color: #fff;
+  background: #9e9c93;
+}
+
+.bakery_sandwich {
+  padding: 100px 0;
+  background: #f3f1e9;
+}
+
+.sandwich_left {
+  width: 24%;
+  float: left;
+}
+
+.sandwich_left .sandwich_variety {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sandwich_left .sandwich_variety img {
+  width: 100px;
+  height: 100px;
+  border-radius: 25em;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 20px;  
+}
+
+.sandwich_left .sandwich_variety h5 {
+  font-family: 'Alegreya', serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #a47d5e;
+  margin-bottom: 18px;
+}
+
+.sandwich_left .sandwich_variety p {
+  font-family: 'ProximaNovaRegular';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #56534c;
+  margin-bottom: 0px;
+}
+
+.sandwich_right {
+  margin-top: 100px;
+  width: 68%;  
+  height: 556px;  
+  float: right;
+  border: 10px solid #fff;
+  position: relative;
+}
+
+.sandwich_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.sandwich_right span.button {
+  color: #dfc691;
+  border: 1px dashed #dfc691;
+  background: #fff;
+  width: 171px;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  z-index: 9;
+}
+
+.sandwich_schedule {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  z-index: 9;
+}
+
+.sandwich_schedule .ready_time {
+  width: 200px;
+  height: 200px;
+  padding: 34px 0px;
+  text-align: center;  
+  background: rgba(255,255,255,0.7);
+  margin-bottom: 1px;
+}
+
+.sandwich_schedule .ready_time.final {
+  background: rgba(255,255,255,0.95);
+}
+
+.sandwich_schedule .ready_time span.text {
+  font-family: 'Alegreya', serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #a47d5e;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sandwich_schedule .ready_time span.time {
+  font-family: 'Alegreya', serif;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 75px;
+  letter-spacing: 6px;
+  text-align: center;
+  color: #56534c;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sandwich_schedule .ready_time.final span.time {
+  color: #dfc691;
+  font-size: 92px;
+  line-height: 85px;
+}
+
+.sandwich_schedule .ready_time span.min {
+  font-family: 'Alegreya', serif;
+  font-size: 12px;  
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #979285;
+  text-transform: lowercase;
+  display: block;
 }
