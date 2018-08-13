@@ -28,6 +28,13 @@
           <a href="#">Gustoso</a>
         </div>
         <div class="right_header">
+          <div id="header_toggle">
+            <span class="hamburger">
+              <span class="icon1"></span>
+              <span class="icon2"></span>
+              <span class="icon3"></span>
+            </span>
+          </div>
           <div class="navigation_bar">
             <nav>
               <ul>
@@ -66,10 +73,12 @@
       </div>
     </header>
 
+    <div class="mobile_nav"></div>
+
     <section class="bakery_banner" style="background-image:url('images/banner.jpg');">
       <div class="container">
         <h1>Pastry with love</h1>
-        <div class="dashed_line"></div>
+        <img src="images/wave_line.png" alt="wave_line" class="dashed_line">        
         <p>We're bringing you fresh ingredients every <br> day in ways you can't resist.</p>
         <a href="#" class="button">Our menu</a>
       </div>
@@ -105,7 +114,8 @@
           </div>
           <div class="bakery_cakes_img">
             <img src="images/bakery-cake2.jpg" alt="img4">
-          </div>            
+          </div>  
+          <div class="clear"></div>		          
         </div>
         <div class="clear"></div>
       </div>
@@ -299,17 +309,17 @@
           <div class="sandwich_schedule">
             <div class="ready_time">
               <span class="text">PREP</span>
-              <span class="time">15</span>
+              <span class="time val1">15</span>
               <span class="min">mins</span>
             </div>
             <div class="ready_time">
               <span class="text">COOK</span>
-              <span class="time">35</span>
+              <span class="time val2">35</span>
               <span class="min">mins</span>
             </div>
             <div class="ready_time final">
               <span class="text">Ready In</span>
-              <span class="time">50</span>
+              <span class="time val3"></span>
               <span class="min">mins</span>
             </div>
           </div>
@@ -318,11 +328,39 @@
       </div>
     </section>
 
-    <footer>
-
+    <footer class="footer_block">
+      <div class="container">
+        <div class="footer_inner">
+          <div class="footer_logo">
+            <a href="#">Gustoso</a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Our menu</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">Culture</a>
+            </li>
+            <li>
+              <a href="#">Events</a>
+            </li>
+            <li>
+              <a href="#">Catering</a>
+            </li>
+            <li>
+              <a href="#">Visit us</a>
+            </li>
+          </ul>	
+          <div class="clear"></div>		  
+        </div>		 
+      </div>
     </footer>
 
     <script type="text/javascript" data-cfasync="true" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" data-cfasync="true" src="js/jquery-ui.js"></script>
     <script type="text/javascript" data-cfasync="true" src="js/slick.js"></script>
     <script type="text/javascript" data-cfasync="true" src="js/custom.js"></script>
 
