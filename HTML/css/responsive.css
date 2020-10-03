@@ -1,0 +1,403 @@
+/*
+* Responsive Code
+*/
+
+@media only screen and (max-width: 1250px) {
+  .footer_block ul li {
+    padding: 30px 31px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    max-width: 1000px;
+  }
+  .navigation_bar ul li {
+    padding: 0 22px;
+  }
+  .bakery_banner {
+    padding: 200px 0 150px;
+  }
+  .dashed_line {
+    margin: 30px auto 40px;
+  }
+  .bakery_cakes {
+    padding: 80px 0;
+  }
+  blockquote {
+    width: 350px;
+  }
+  .tasty_pancakes .pancakes_inner_block {
+    padding-left: 0;
+  }
+  .pancakes_right {
+    width: 445px;
+    padding: 65px 30px 50px;
+  }
+  .pancakes_right ul li img {
+    width: 75px;
+    height: 75px;
+  }
+  .pancakes_right .ready_time {
+    width: 170px;
+    height: 170px;
+    padding: 15px 0px;
+  }
+  .pancakes_inner_block ul.slick-dots {
+    left: 15px;
+  }
+  .breakfast_left {
+    width: 54%;
+  }
+  .bakery_sandwich {
+    padding: 80px 0 0; 
+  }
+  .footer_block ul li {
+    padding: 20px 21px;
+  }
+  .footer_block ul li:nth-child(3) {
+    margin-right: 180px;
+  }
+  .footer_logo {
+    width: 180px;
+  }
+  .footer_logo {
+    top: 10px;
+    left: 17px;    
+  }  
+  .footer_block ul li::after { 
+    top: 23px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) { 
+  .container {
+    max-width: 100%;
+  }
+  .navigation_bar {
+    display: none;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .right_header #header_toggle {
+    display: block; 
+  }
+  body.open {
+    overflow: hidden;
+  }
+  .logo {
+    padding: 0 15px;
+  }
+  body.open .logo{
+    position: relative;
+    z-index: 99;
+  }
+  .navigation_bar.open {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    opacity: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    visibility: visible;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+  }  
+  .mobile_nav {
+    display: block;
+  }
+  .right_header .navigation_bar.open {
+    display: none;
+  }
+  .navigation_bar.open nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+  }
+  .navigation_bar.open nav ul li {
+    display: block;
+    float: none;
+    margin: 0;
+    padding: 15px 10px;
+  }
+  .navigation_bar ul li::after { 
+    content: none;
+  }
+  .navigation_bar ul li a { 
+    font-size: 30px;
+    line-height: normal;
+  }
+  .bakery_banner h1{
+    font-size: 60px;
+  }
+  .bakery_cakes_left, .bakery_cakes_right {
+    width: 100%;
+    float: none;
+  }
+  .bakery_cakes_left {
+    margin-bottom: 100px;
+  }
+  .pancakes_left {
+    width: 100%;
+    height: auto;
+    float: none;
+    border-radius: 0;
+  }  
+  .pancakes_left img {
+    height: 400px;
+    object-position: center;
+  }
+  .pancakes_left::before {
+    content: none;
+  }
+  .pancakes_right {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .pancakes_right .ready_time {
+    top: -85px;
+    right: 0;
+  }
+  .pancakes_right ul.smallcakes_slider {
+    width: 400px;
+  }
+  .tasty_pancakes {
+    padding: 80px 0;
+  }
+  .tasty_pancakes .pancakes_inner_block .pancakes_slider {
+    padding-top: 0px;
+  }
+  .pancakes_right p {
+    margin: 35px 0;;
+  }
+  .breakfast_left {
+    width: 100%;
+    float: none;
+    margin-bottom: 100px;
+  }
+  .breakfast_right {
+    float: none;
+    margin: 0 auto;
+  }
+  .sandwich_left {
+    float: none;
+    width: 100%;    
+    text-align: center;
+    margin: 50px 0 0;
+  }
+  .sandwich_left .sandwich_variety { 
+    display: inline-block;
+    width: 32.33%;
+    vertical-align: top;
+    padding: 0 15px;
+  }
+  .sandwich_right {
+    width: 95%;
+    margin: 50px auto 0;
+    float: none;
+  }
+  .footer_logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 80px auto 0;
+  }
+  .footer_block ul {
+    margin: 50px 0 70px;
+  }
+  .footer_block ul li:nth-child(3) {
+    margin: 0 -3px;
+  }
+  .footer_block ul li {
+    padding: 15px 16px;
+  }
+  .footer_block ul li::after {
+    top: 18px;
+  }
+  .footer_block ul li:nth-child(3)::after {
+    content: '~';
+  }  
+  .bakery_breakfast {
+    background-position: left top;
+  }
+  .footer_block ul {
+    text-align: center;
+  }
+  .footer_block ul li {
+    margin: 0 -3px;
+    float: none;
+    display: inline-block;
+  }
+  .footer_block {
+    padding-bottom: 0;
+  }
+
+}
+
+@media only screen and (max-width: 767px) { 
+  .bakery_banner {
+    padding: 150px 0 100px;
+    background-position: center top;
+  }
+  .bakery_banner h1 {
+    font-size: 45px;
+  }
+  .bakery_banner p {
+    font-family: 'ProximaNovaRegular';
+    font-size: 18px;
+  }
+  .bakery_breakfast {
+    background-position: center top;
+  }
+  .button { 
+    width: 160px;
+    padding: 10px 0;
+  }
+  .bakery_cakes_left {
+    padding: 0;
+  }
+  .pancakes_left img {
+    height: 300px;
+  }
+  .pancakes_right .ready_time {
+    top: -115px;
+  }
+  .pancakes_right ul.smallcakes_slider {
+    width: 300px;
+  }
+  .bakery_cakes {
+    padding: 80px 0;
+  }
+  .sandwich_left .sandwich_variety {
+    width: 100%;
+  }
+  .footer_block ul {
+    text-align: center;
+  }
+  .footer_block ul li {
+    border:0;
+    display: inline-block;
+    float: none;  
+  }
+  .footer_block {
+    padding: 0;
+  }
+  .pancakes_inner_block ul.slick-dots {
+    left: 7px;
+    width: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 479px) { 
+  .cursor {
+    margin-top: 0;
+    transform: translate(-50%,-50%);
+  }
+  .backery_chef ul li {
+    padding: 0 8px;
+  }
+  .backery_chef ul li span {
+    padding: 20px 0;
+  }
+  blockquote {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .bakery_cakes_right span {
+    display: none;
+  }
+  .bakery_cakes_right .bakery_cakes_img {
+    width: 100%;
+    float: none;
+  }
+  h2.title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .pancakes_right ul.smallcakes_slider {
+    width: 250px;
+    padding: 0 40px;
+  }
+  .breakfast_right {
+    float: left;
+    width: 270px;
+    height: 545px;
+  }
+  .flair_block {
+    padding: 30px 25px;
+  }
+  .flair_block .decade {
+    word-spacing: 100px;
+  }
+  .flair_block h2.title {
+    margin: 30px 0 20px;
+    font-size: 25px;
+  }
+  .breakfast_right .breakfast_right_border1 {
+    height: 495px;
+  }
+  .breakfast_right .breakfast_right_border2 {
+    height: 455px;
+  }
+  .sandwich_schedule {
+    width: 125px;
+    height: 125px;
+  }
+  .sandwich_schedule .ready_time {
+    width: 125px;
+    height: 125px;
+  }
+  .sandwich_schedule .ready_time {
+    padding: 10px 0;
+  }
+  .sandwich_schedule .ready_time span.time, .sandwich_schedule .ready_time.final span.time {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .sandwich_right {
+    height: 335px;
+  }
+  .sandwich_right span.button {
+    width: 115px;
+    letter-spacing: 1.2px;  
+  }
+  .footer_block ul {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .footer_block ul li {
+    display: block;
+    float: none; 
+    padding: 10px 15px;   
+  }
+  .footer_block ul li:after, .footer_block ul li:nth-child(3)::after {
+    content: none;
+  }
+  .navigation_bar ul li {
+    padding: 10px 10px;
+  }
+  .navigation_bar ul li a {
+    font-size: 21px;
+  }
+
+
+}
